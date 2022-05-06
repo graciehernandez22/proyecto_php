@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Creando  Tabla Consulta-->
     <a href="guardardatos.php">Guardar</a>
     <h1>CONSULTA DE CLIENTES</h1>    
 
