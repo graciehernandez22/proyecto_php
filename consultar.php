@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Graciela Carolina Hernández González-->  
     <!--Creando  Tabla Consulta-->
     <a href="guardardatos.php">Guardar</a>
     <h1>CONSULTA DE CLIENTES</h1>    
@@ -16,7 +17,7 @@
     $username = "root";
     $password = "";
     $dbname = "sis21c";
-
+      
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
@@ -30,6 +31,7 @@
     if ($result->num_rows > 0) {
     echo "<table border=1><tr><td>IDCLIENTE</td><td>Nombre</td><td>Apellidos</td><td>telefono</td><td>DUI</td> </tr>";
     while($row = $result->fetch_assoc()) {
+        // Creando los campos de las tablas
         echo "<tr><td>" . $row["idcliente"]."</td>"; 
         echo "<td>" . $row["nombre"]."</td>";
         echo "<td>" . $row["apellidos"]."</td>";
